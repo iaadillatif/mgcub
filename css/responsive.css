@@ -1,0 +1,248 @@
+@media (min-width: 1367px) {
+    .nav-menu>li {
+        margin-left: 26px;
+    }
+    .notifBox {
+        height: 440px !important;
+    }
+    .latestBox {
+        height: 440px !important;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1400px) {
+    .slide_viewer {
+        height: 475px !important;
+    }
+    .notifBox {
+        height: 315px !important;
+    }
+    .latestBox {
+        height: 315px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1320px) {
+    .nav-menu>li {
+        margin-left: 0px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .nav-menu>li {
+        margin-left: 26px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #logo h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .text-logo {
+        margin-left: 15px !important;
+        float: left;
+    }
+    #logo h6 {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .container {
+        max-width: 1300px;
+    }
+    .whiteBox img {
+        width: 68px;
+    }
+    .nav-menu a {
+        padding: 10px 11px;
+        font-size: 11.5px;
+        letter-spacing: 0.1;
+    }
+    .header-top {
+        padding: 6px 0px;
+    }
+    .header-top a {
+        letter-spacing: 0;
+        padding: 2px 5px;
+    }
+    .headerFourBox {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .single-feature .title h4 {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .admissoinBox h4 {
+        font-size: 14px;
+    }
+    .single-feature .desc-wrap a {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .marquee_text marquee ul li {
+        line-height: 18px;
+    }
+    .vcBox-content p {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1;
+    }
+    .single-feature .desc-wrap {
+        padding: 10px 8px;
+    }
+    .uniImg {
+        width: 86px;
+        height: 64px;
+        margin-right: 10px;
+    }
+    .whiteBox {
+        padding: 10px 7px;
+    }
+    .counterBox h6 {
+        font-size: 12px;
+    }
+    .counterBox i {
+        font-size: 19px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 6px;
+    }
+    .counterBox h2 {
+        font-size: 20px;
+    }
+    .counterBox {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .icon-box-title {
+        font-size: 14px;
+    }
+    .sf-arrows .sf-with-ul::after {
+        right: 1px;
+    }
+    .nav-menu>li {
+        margin-left: 17px;
+    }
+}
+
+@media(min-width: 991px) {
+    .slide_viewer {
+        height: 350px;
+    }
+    .notifBox {
+        height: 270px;
+    }
+    .latestBox {
+        height: 270px;
+    }
+    .single-feature .title h4 {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .vcBox,
+    .admsnBox,
+    .resultBox,
+    .theUniBox {
+        height: 211px;
+    }
+    .eventBox {
+        height: 462px;
+    }
+    #logo {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 1149px) and (min-width: 992px) {
+    .notifBox {
+        height: 294px !important;
+    }
+}
+
+@media (max-width: 673px) {
+    #logo {
+        margin-left: 0px;
+    }
+    #logo h3 {
+        font-size: 16px;
+        margin-bottom: 2px;
+        margin-top: 8px;
+        margin-left: 8px !important;
+    }
+    #logo h6 {
+        font-size: 10px;
+        margin-top: 4px;
+        margin-left: 8px !important;
+        width: auto;
+    }
+    .logo_part .container {
+        padding: 0px;
+    }
+    .rotate-image {
+        position: relative;
+        top: 1%;
+        left: 0;
+        bottom: 0;
+        width: 56px;
+        float: left;
+        height: 60px;
+        margin: 0;
+    }
+    .marquee_text marquee {
+        height: 300px;
+    }
+    .headerFourBox {
+        margin-top: 12px;
+    }
+    .headerFourBox:last-child {
+        margin-bottom: 12px;
+    }
+    .sliderHeight {
+        height: 375px;
+    }
+    .uniSectionBox {
+        height: 335px;
+    }
+    .abt_box {
+        height: 305px;
+    }
+    .icon-box .icon {
+        margin-top: 0px;
+    }
+    .mt-15 {
+        margin-top: 8px;
+    }
+    .otherboxSection .icon-box {
+        min-height: 125px;
+        margin-bottom: 12px;
+    }
+    .gandhiji_img {
+        float: right;
+        margin-top: 10px;
+        width: 30%;
+    }
+    #mobile-nav-toggle {
+        background: #f7631b;
+        padding: 3px 5px;
+        border-radius: 5px;
+    }
+    #mobile-nav-toggle i {
+        color: #fff;
+    }
+    #mobile-nav ul li a {
+        padding: 4px 16px;
+    }
+    #mobile-nav ul {
+        margin-bottom: 12px;
+    }
+    #mobile-nav ul li li {
+        padding-left: 10px !important;
+    }
+    .fourBtnBox{
+        margin-top: 100px;
+    }
+}
