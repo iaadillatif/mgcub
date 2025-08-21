@@ -12065,3 +12065,7 @@ textarea.form-control-lg {
   }
 }
 
+#carouselExampleAutoplaying {
+  border: 20px;
+  padding: 15px;
+}

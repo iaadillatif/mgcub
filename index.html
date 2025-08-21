@@ -1,80 +1,10 @@
 <html lang="zxx" class="no-js">
-
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Mahatma Gandhi Central University, Motihari (Bihar) is a central university situated in East Champaran district. A Central University established by an Act of Parliament. website mgcub.ac.in">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href="images/favicon.png">
     <title></title>
-    <style>
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
-
-        .modal-content {
-            position: relative;
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 800px;
-            /* Adjust this value based on your content size */
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            /* Space between sections */
-        }
-
-        .modal-content .sections-container {
-            display: flex;
-            justify-content: space-between;
-            /* Space out the sections */
-            gap: 20px;
-            /* Space between images */
-        }
-
-        .modal-content .section {
-            flex: 1;
-            /* Ensure sections take up equal space */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .modal-content .section img {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            /* Ensure the image scales properly */
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
     <link rel="stylesheet" href="css/linearicons.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -85,6 +15,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -93,190 +24,6 @@
         <div class="header-top">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-lg-12 col-sm-12 header-top-right no-padding">
-                        <a id="google_translate_element"> </a> &nbsp;|&nbsp;
-                        <script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'en,hi'
-    }, 'google_translate_element');
-  }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    let observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-        // Change "Select Language" text to "English"
-        let selectOption = document.querySelector('option[value=""]');
-        if (selectOption && selectOption.innerText.includes("Select Language")) {
-          selectOption.innerText = "English";
-        }
-
-        // Hide the Google Translate "Powered by" text
-        let translateElements = document.querySelectorAll("span, div");
-        translateElements.forEach(element => {
-          if (element.innerText.trim().toLowerCase() === "powered by") {
-            element.style.display = "none";
-          }
-        });
-
-        // Hide the extra dropdown icon
-        let targetLangElement = document.getElementById(":0.targetLanguage");
-        if (targetLangElement && targetLangElement.nextElementSibling) {
-          targetLangElement.nextElementSibling.style.display = "none";
-        }
-
-        // Remove unwanted text nodes inside the Google Translate gadget
-        let translateGadget = document.querySelector(".goog-te-gadget");
-        if (translateGadget) {
-          translateGadget.childNodes.forEach(node => {
-            if (node.nodeType === 3) { // Text node
-              node.remove();
-            }
-          });
-        }
-      });
-    });
-
-    let googleTranslateElement = document.getElementById("google_translate_element");
-    if (googleTranslateElement) {
-      observer.observe(googleTranslateElement, {
-        childList: true,
-        subtree: true
-      });
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<style>
-  /* For Google Search  */
-  .gsc-control-cse {
-    float: right;
-    width: 175px !important;
-    padding: 0px !important;
-    border: 0px !important;
-    background-color: #e63946 !important;
-  }
-
-  .gsc-search-button {
-    background-color: #e63946 !important;
-    border-color: #e63946 !important;
-    padding: 0px 2px !important;
-    margin-left: 0px !important;
-    height: 16px !important;
-  }
-
-  .gsc-search-button:hover {
-    color: #0d2263 !important;
-    /* border-color: #0D2263 !important; */
-  }
-
-  .gsib_a {
-    padding: 0px 3px 0px 3px !important;
-  }
-
-  table.gsc-search-box td.gsc-input {
-    padding-right: 0px !important;
-  }
-
-  form.gsc-search-box {
-    margin-bottom: 0 !important;
-    /* border-right: 1px solid #ddd; */
-    padding-right: 5px;
-  }
-
-  .gsc-input {
-    font-size: 13px !important;
-    background: rgb(255, 255, 255) url("../../../asset/images/bg/branding.png") no-repeat left center !important;
-  }
-
-  .gsc-input:focus {
-    background-image: none !important;
-  }
-
-  table.gsc-search-box {
-    margin-bottom: 1px !important;
-    margin-top: 1px !important;
-  }
-
-  .gscb_a {
-    line-height: 20px !important;
-  }
-
-  .gsst_a .gscb_a {
-    color: #6a6b6c !important;
-    cursor: pointer;
-    font-size: 18px !important;
-  }
-
-  .skiptranslate .skiptranslate {
-    display: none;
-  }
-
-  body {
-    top: 0px !important;
-  }
-
-  .goog-te-gadget-simple {
-    background-color: #e63946;
-    border: none !important;
-    font-size: 10pt;
-    display: inline-block;
-    cursor: pointer;
-    zoom: 1;
-    display: inline;
-  }
-
-  .goog-te-combo {
-    width: 125px;
-    margin-top: 0px !important;
-    margin-bottom: 1px !important;
-    height: 23px;
-    color: #000;
-  }
-
-  .goog-te-combo option {
-    background: #D3D3D3;
-    color: #000;
-  }
-
-  /* Force the Google Translate dropdown to stay inline */
-  #google_translate_element {
-    display: inline-block !important;
-    vertical-align: middle !important;
-    padding: 0;
-  }
-
-  /* Ensure the dropdown itself does not take the full width */
-  #google_translate_element select.goog-te-combo {
-    display: inline-block !important;
-    /* width: auto !important; */
-    padding: 2px 7px !important;
-    height: 20px !important;
-    font-size: 13px !important;
-    line-height: normal !important;
-    vertical-align: middle !important;
-    border: none !important;
-  }
-</style>                        <a href="anti_ragging.php">Anti Ragging </a> &nbsp;|&nbsp;
-                        <a href="sc_st.php">SC/ST Cell</a> &nbsp;|&nbsp;
-                        <a href="admission.php">Admission <img src="images/new.gif" alt="new image" /></a> &nbsp;|&nbsp;
-                        <a href="recruitments.php">Recruitment <img src="images/new.gif" alt="new image" /></a> &nbsp;|&nbsp;
-                        <a href="iqac.php">IQAC</a> &nbsp;|&nbsp;
-                        <a href="committees.php">Cells & Committees </a> &nbsp;|&nbsp;
-                        <a href="eResources.php">eResources</a> &nbsp;|&nbsp;
-                        <a href="tender.php">e-Tender</a> &nbsp;|&nbsp;
-                        <a href="./rti.php">RTI</a> &nbsp;|&nbsp;
-                        <a href="./archives.php">Archives</a> &nbsp;|&nbsp;
-                        <a href="alumni.php">Alumni</a> &nbsp;|&nbsp;
-                        <a href="./downloads.php">Downloads</a> &nbsp;|&nbsp;
-                        <a href="./contact_us.php">Contact Us</a> &nbsp;|&nbsp;
-                        <a href="./old_website/index.php">Old Website</a>
-
-                    </div> -->
-
                     <div class="col-lg-12 col-sm-12 header-top-right no-padding">
                         <select id="languageSwitcher" onchange="changeLanguage()">
                             <option value="en" selected>English</option>
@@ -378,8 +125,7 @@
 
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
-                            <li class="                                        active
-                                    "><a href="index.php"><i class="fa fa-home f-22"></i></a></li>
+                            <li class="active"><a href="index.php"><i class="fa fa-home f-22"></i></a></li>
                             <li class="menu-has-children "><a href="">About Us</a>
                                 <ul>
                                     <li><a href="about.php"> History of MGCU</a></li>
@@ -402,9 +148,9 @@
                                     <li><a href="university_authority.php"> University Authorities</a></li>
                                     <li><a href="statutory_bodies.php"> Statutory Administrative Officers</a></li>
                                     <li><a href="university_officers.php"> University Administration</a></li>
-                                    <!--                                        <li><a href="iqac.php"> IQAC</a></li>
-                                                                                <li><a href="committees.php"> Committees</a></li>
-                                                                                <li><a href="download/Office Order dated 10.05.2020 regarding Academic Calendars 2019-20_and_2020-21.pdf" > Academic calendar</a></li>-->
+                                    <!--<li><a href="iqac.php"> IQAC</a></li>
+                                    <li><a href="committees.php"> Committees</a></li>
+                                    <li><a href="download/Office Order dated 10.05.2020 regarding Academic Calendars 2019-20_and_2020-21.pdf" > Academic calendar</a></li>-->
                                     <li><a href="directory.php"> Directory</a></li>
                                 </ul>
                             </li>
@@ -644,15 +390,12 @@
                             </li> -->
 
 
-                            <li class="menu-has-children                                         active
-                                    "><a href="#"> MGCU@Samarth</a>
+                            <li class="menu-has-children active"><a href="#"> MGCU@Samarth</a>
                                 <ul class="right-0">
                                     <li><a href="https://mgcub.samarth.edu.in/index.php/site/login"> Student Portal</a></li>
                                     <li><a href="https://mgcub.samarth.ac.in/index.php/site/login"> Employee Portal</a></li>
                                 </ul>
                             </li>
-
-
                         </ul>
                     </nav>
                     <!-- #nav-menu-container -->
@@ -687,7 +430,6 @@
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="marqueeBox">
                     <marquee direction="left" scrollamount="3" scrolldelay="100" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
-<!--                        <i class="fa fa-arrow-circle-right orange-text" aria-hidden="true"></i> <a href="pdf/Annual Report-EBSB-MGCUB-2019-20.pdf" target="_blank">Annual Report: Ek Bharat Shreshtha Bharat"</a>-->
                                                         <i class="fa fa-arrow-circle-right orange-text" aria-hidden="true"></i>
                                 <a href="pdf/20250814133938907aacda58.docx" >
                                     <span>UPDATED Advertisement Notice dated 13th August 2025 w.r.t. Engagement of Student Counsellor on Contract basis.</span>
@@ -1314,268 +1056,8 @@
 <div class="sliderPart">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="single-feature">
-                    <div class="title latest_bg">
-                        <h4>Notifications/ Office Orders</h4>
-                    </div>
-                    <div class="desc-wrap marquee_text notifBox">
-                        <marquee direction="up" scrollamount="3" scrolldelay="200" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"
-                                 height="255">
-                            <ul>
-                                                                        <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/2025081606475175be6dc746.pdf" >
-                                                <span>Notification reg. reconstitution of School Board of School of Social Sciences.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250816064644d06204b4fb.pdf" >
-                                                <span>Notification reg. reconstitution of School Board of School of Physical Sciences.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250814211139be4b226d5a.pdf" >
-                                                <span>Office Order regarding flag hoisting ceremony on the occasion of 79th Independence day on 15th August, 2025 at different campuses of the University. (Dated 14.08.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250814211005a821a0a635.pdf" >
-                                                <span>Office Order regarding flag hoisting ceremony on the occasion of 79th Independence day on 15th August, 2025 at Gandhi Bhawan, Bankat. (Dated 14.08.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/202507182015419ab0285721.pdf" >
-                                                <span>Office Order regarding constitution of Universal Human Values Cell at Institutional Level and University Level.(Dated 18.07.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250707190337b1181c03d1.pdf" >
-                                                <span>Notification regarding the Competent Authority has been please to appoint Prof. Pranveer Singh, Department of Zoology as Provost.(Dated 07.07.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/202506262001062839cc2c34.pdf" >
-                                                <span>Office order reg. formation of committee for proper implementation of Indian Knowledge System in Mahatma Gandhi Central University.(Dated 25.06.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250527150815f0cca77700.pdf" >
-                                                <span>Office Order reg. constitution a Committee for preparing Medical Reimbursement Policy of the University.(Dated 26.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250526190329b13cd7910e.pdf" >
-                                                <span>Office Order reg. assignment of the duties and responsibilities of the Personal Assistant (PA) to the Vice-Chancellor to Mr Aditya Chaturvedi, Lower Division Clerk.(Dated 26.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250526162121292f3d1f9d.pdf" >
-                                                <span>Office Order regarding constitution of committee in context of the ongoing admission process for PG programmes for Academic Session 2025-26.(Dated 23.05.2025) </span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250526204938509e1b7b4b.pdf" >
-                                                <span>Office Order regarding to constitute a committee for finalise the Academic Calendar for Academic Session 2025-26.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250524091225c864133a53.pdf" >
-                                                <span>Notification reg. reconstitution of the Board of Studies of the Department of Biotechnology.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250523162845b6562fa74f.pdf" >
-                                                <span>Office Order reg. constitution of Physical Stock Verification Committees for Stock Verification of the Different Campus Departments of the University. (Dated 20.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/202505231612021545fe706a.pdf" >
-                                                <span>Office Office reg. Deans; Head; DSW; Chief Proctor & Campus Directors shall remain available in the University during Summer and Winter Vacations. (Dated 22.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250523161009fe0425194e.pdf" >
-                                                <span>Office Order reg. constitution of Physical Stock Verification Committees for Stock Verification of the Different teaching departments of the University. (Dated 20.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250516072954497b9bb854.pdf" >
-                                                <span>Office order reg. Admission Coordination committee (Academic Session: 2025-26).(Dated 15.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/2025051618200947dee4a2bf.pdf" >
-                                                <span>Notification reg. Appointment of Dean, School of Humanities & Languages.(Dated 15.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250516181843b988a13407.pdf" >
-                                                <span>Notice reg. Appointment of Head, Department of Hindi.(Dated 15.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250501233327611170f4cb.pdf" >
-                                                <span>Office Order regarding re-constitute SC-ST Cell of the University and constitute Standing Committee for effective implementation of polices and programmes of the reservation policy for the SC and ST.(Dated 01.05.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250501232418ca1b6cfd71.pdf" >
-                                                <span>Notification regarding appointment of Head, Department of Commerce.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250326060543974e85e838.pdf" >
-                                                <span>Office order reg. assigning of Additional Charge of Assistant Registrar (Academic) to Mr Bidhubhusan Mishra, Assistant Professor, Department of Economics. (Dated 25.03.2025) </span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/2025032308504461e2103d76.pdf" >
-                                                <span>Office Order reg. re-constitution of Internal Complaint Committee (ICC) for gender sensitization against Sexual Harassment. (Dated 19.03.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250213195947702483ed55.pdf" >
-                                                <span>Office Order reg. any type of letters and complaints be sent through proper channel.(Dated 13.02.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250213192612c1dcd00c61.pdf" >
-                                                <span>Office order regarding the Policy on Submission and Processing of Complaints.(Dated 13.02.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250213162438c14e4fa637.pdf" >
-                                                <span>Office order regarding nomination of Dr Narendra Singh, Assistant Professor, Department of Political Science as Nodal Officer. (Dated 13.02.2025) </span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/202502062051487be8055928.pdf" >
-                                                <span>Office order reg constitution of various Committees in connection with the Educational Conclave 2025. (Dated 06.02.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250124201258a50d57042a.pdf" >
-                                                <span>Notice reg. Flag Unfurling Ceremony on the occasion of 76th Republic Day.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250124182144ce0e1068d6.pdf" >
-                                                <span>Office Order reg. implementation of Samarth E-Gov Suite. (Dated 23.01.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/2025012320440189e01b7bfd.pdf" >
-                                                <span>Office order regarding processing of files, letters, requests, etc. through Samarth E-Gov Suite. (Dated 23.01.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250122195559b650749b22.pdf" >
-                                                <span>Office order reg. to re-constitute the Recruitment and Assessment Cell (RAC) of the University.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250120184334e1dcb609fc.pdf" >
-                                                <span>Officer Order regarding nomination of Prof. Sanotsh Kumar Tripathi, Department of Physics as Coordinator. (Dates 20.01.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/2025011619172089a1040ead.pdf" >
-                                                <span>Office Order regarding Holidays to be observed during the year 2025.(Dated 16.01.2025) </span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250114224235f5f8294581.pdf" >
-                                                <span>Notice reg. Empowerment of Campus Directors to ensure faculty presence and timely class engagement.</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250109080657c7f99031f6.pdf" >
-                                                <span>Office Order reg. assignment of Charge of the Dean, School of Physical Sciences and Head, Department of Mathematics.(Dated 08.01.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                                <li>
-                                            <i class="fa fa-caret-right"></i>
-                                            <a href="pdf/20250107200212a3e4c5dc22.pdf" >
-                                                <span>Office Order reg. nomination of Dr Shyam Nandan, Assistant Professor, Department of Hindi as Coordinator to establishment of IGNOU Learning Support Centre in MGCU Campus. (Dated 06.01.2025)</span>
-                                            </a>
-                                                                                            <img src="images/new.gif" alt="new image"/>
-                                                                                    </li><hr>
-                                                                    </ul>
-                        </marquee>
-                        <a href="notification.php" class="viewAll-btn">View all</a>
-                    </div>
-                </div>
-            </div>
             <!-- slider section -->
-            <div class="col-md-6 col-sm-6 col-xs-12 p0">
+            <div class="col-md-12 col-sm-12 col-xs-12 p0">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1636,7 +1118,6 @@
                         </div> -->                      
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="images/slider/09102023_5.jpg" alt="1 slide">
-                            <!-- <h5>Your Title Here</h5> -->
                         </div> 
                         <!-- <div class="carousel-item">
                             <img class="d-block w-100" src="images/slider/09102023_6.jpg" alt="6 slide">
@@ -1825,12 +1306,468 @@
                 </div>                
             </div>
             <div class="col-md-3 col-sm-3 col-xs-12">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<style>
+    .carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
+}
 
+</style>
+
+<div class="feature-area">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="single-feature mb-10 uniBox">
+                    <div class="admissoinBox">
+                        <h4>The university</h4>
+                    </div>
+                    <div class="desc-wrap notifBox">
+                        <img src="images/address2.jpg" alt="address2" class="uniImg">
+                        <div class="vcBox-content text-justify">
+                            <h4>MAHATMA GANDHI CENTRAL UNIVERSITY</h4>
+                            <p class="text-justify mb-2">Mahatma Gandhi Central University came into existence by an Act of Parliament, Central Universities (Amendment)
+                                Act 2014(No 35 of 2014). The University became functional on 3rd February 2016. MGCU is situated in Motihari (Bankat), on National Highway 28.</p>
+                            <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#uniDocumentaryModal">Documentary</a>
+
+                            <a href="about.php" class="btn btn-primary btn-sm" style="float: right;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- University Documentary Video Popup -->
+            <div class="modal fade" id="uniDocumentaryModal" tabindex="-1" aria-labelledby="uniDocumentaryModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="uniDocumentaryModalLabel">University Documentary</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe id="video_frame" width="100%" height="500" src="https://www.youtube.com/embed/36ip7Xw0JjI?start=57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="single-feature mb-10 uniBox">
+                    <div class="admissoinBox">
+                        <h4>Vice Chancellor Message</h4>
+                    </div>
+                    <div class="desc-wrap notifBox">
+                        <img src="images/vc_1.jpg" alt="Prof. Sanjay Srivastava" class="vcImg">
+                        <div class="vcBox-content text-justify">
+                            <h4>Prof. Sanjay Srivastava</h4>
+                            <p class="text-justify mb-10">Welcome to MAHATMA GANDHI CENTRAL UNIVERSITY, Motihari, Bihar. Established in the East Champaran district of Bihar, this is the 41st Central University of India.</p>
+                            <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#HVCModal">Hon'ble Vice-Chancellor's </a>
+                            <a href="vc_message.php" class="btn btn-primary btn-sm" style="float: right;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- University VC Video Popup -->
+            <div class="modal fade" id="HVCModal" tabindex="-1" aria-labelledby="HVCModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="HVCModalLabel">Hon'ble Vice-Chancellor's address on the first convocation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe id="video_frame" width="100%" height="500" src="https://www.youtube.com/embed/vcdH3qE-PlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="single-feature mb-10 uniBox">
+                    <div class="admissoinBox">
+                        <h4>University Administrators</h4>
+                    </div>
+                    <div class="desc-wrap notifBox">
+                        <div class="whiteBox whiteBox-bg">
+                            <img src="images/poi1.png" alt="Smt. Droupadi Murmu" class="img-responsive" />
+                            <div class="vcBox-content">
+                                <h5>Smt. Droupadi Murmu</h5>
+                                <h6>The President of India, Hon'ble Visitor</h6>
+                                <a href="https://presidentofindia.nic.in/Profile" target="_blank">Read more</a>
+                            </div>
+                        </div>
+                        <div class="whiteBox whiteBox-bg">
+                            <img src="images/Dharmendra_Pradhan.png" alt="Shri Dharmendra Pradhan" class="img-responsive" />
+                            <div class="vcBox-content">
+                                <h5>Shri Dharmendra Pradhan</h5>
+                                <h6>Hon'ble Education Minister</h6>
+                                <a href="https://www.msde.gov.in/en/ministers/profile-honble-minister" target="_blank">Read more</a>
+                            </div>
+                        </div>
+                        <div class="whiteBox whiteBox-bg">
+                            <div style="text-align: center;">
+                                <img src="images/Mahesh Sharma_vc.jpg" alt="Padma Shri Dr Mahesh Sharma" class="img-responsive" style="display: inline-block;" />
+                            </div>
+                            <div class="vcBox-content">
+                                <h5>Padma Shri Dr Mahesh Sharma </h5>
+                                <h6>Hon'ble Chancellor</h6>
+                                <a href="chancellor.php">Read more</a>
+                            </div>
+                        </div>
+                        <div class="whiteBox whiteBox-bg">
+                            <div style="text-align: center;">
+                                <img src="images/vc_1.jpg" alt="Prof. Sanjay Srivastava" class="img img-responsive" style="display: inline-block;" />
+                            </div>
+                            <div class="vcBox-content">
+                                <h5>Prof. Sanjay Srivastava</h5>
+                                <h6>Hon'ble Vice-Chancellor</h6>
+                                <a href="vc.php">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="single-feature mb-10 uniBox">
+                    <div class="admissoinBox">
+                        <h4>Events</h4>
+                    </div>
+                    <div class="desc-wrap eventBox">
+                        <!--Slick Carousel Slider-->
+                        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+                        <link rel="stylesheet" type="text/css" href="css/slick.css" />
+                        <div class="items">
+                            <div>
+                                <a href="pdf/event/202508072145246b867b56c0.jpg" target="_blank">
+                                    <img src="pdf/event/202508072145246b867b56c0.jpg">
+                                    <h6>Invited Lecture on &quot;Adaptation to environmental stresses: from gene to field&quot;.<br>[11th August 2025]
+                                        <img src="images/new.gif" alt="new image" style="height: auto !important; width: unset; border: none;" />
+                                    </h6>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="events.php" class="viewAll-btn">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="sliderPart">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
                 <div class="single-feature">
                     <div class="title latest_bg">
-                        <h4>
-                            Latest @ MGCUB
-                        </h4>
+                        <h4>Notifications/ Office Orders</h4>
+                    </div>
+                    <div class="desc-wrap marquee_text notifBox">
+                        <marquee direction="up" scrollamount="3" scrolldelay="200" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"
+                                 height="255">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/2025081606475175be6dc746.pdf" >
+                                        <span>Notification reg. reconstitution of School Board of School of Social Sciences.</span>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250816064644d06204b4fb.pdf" >
+                                        <span>Notification reg. reconstitution of School Board of School of Physical Sciences.</span>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250814211139be4b226d5a.pdf" >
+                                        <span>Office Order regarding flag hoisting ceremony on the occasion of 79th Independence day on 15th August, 2025 at different campuses of the University. (Dated 14.08.2025)</span>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250814211005a821a0a635.pdf" >
+                                        <span>Office Order regarding flag hoisting ceremony on the occasion of 79th Independence day on 15th August, 2025 at Gandhi Bhawan, Bankat. (Dated 14.08.2025)</span>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/202507182015419ab0285721.pdf" >
+                                        <span>Office Order regarding constitution of Universal Human Values Cell at Institutional Level and University Level.(Dated 18.07.2025)</span>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250707190337b1181c03d1.pdf" >
+                                        <span>Notification regarding the Competent Authority has been please to appoint Prof. Pranveer Singh, Department of Zoology as Provost.(Dated 07.07.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/202506262001062839cc2c34.pdf" >
+                                        <span>Office order reg. formation of committee for proper implementation of Indian Knowledge System in Mahatma Gandhi Central University.(Dated 25.06.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250527150815f0cca77700.pdf" >
+                                        <span>Office Order reg. constitution a Committee for preparing Medical Reimbursement Policy of the University.(Dated 26.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250526190329b13cd7910e.pdf" >
+                                        <span>Office Order reg. assignment of the duties and responsibilities of the Personal Assistant (PA) to the Vice-Chancellor to Mr Aditya Chaturvedi, Lower Division Clerk.(Dated 26.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250526162121292f3d1f9d.pdf" >
+                                        <span>Office Order regarding constitution of committee in context of the ongoing admission process for PG programmes for Academic Session 2025-26.(Dated 23.05.2025) </span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250526204938509e1b7b4b.pdf" >
+                                        <span>Office Order regarding to constitute a committee for finalise the Academic Calendar for Academic Session 2025-26.</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250524091225c864133a53.pdf" >
+                                        <span>Notification reg. reconstitution of the Board of Studies of the Department of Biotechnology.</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250523162845b6562fa74f.pdf" >
+                                        <span>Office Order reg. constitution of Physical Stock Verification Committees for Stock Verification of the Different Campus Departments of the University. (Dated 20.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/202505231612021545fe706a.pdf" >
+                                        <span>Office Office reg. Deans; Head; DSW; Chief Proctor & Campus Directors shall remain available in the University during Summer and Winter Vacations. (Dated 22.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250523161009fe0425194e.pdf" >
+                                        <span>Office Order reg. constitution of Physical Stock Verification Committees for Stock Verification of the Different teaching departments of the University. (Dated 20.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250516072954497b9bb854.pdf" >
+                                        <span>Office order reg. Admission Coordination committee (Academic Session: 2025-26).(Dated 15.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/2025051618200947dee4a2bf.pdf" >
+                                        <span>Notification reg. Appointment of Dean, School of Humanities & Languages.(Dated 15.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250516181843b988a13407.pdf" >
+                                        <span>Notice reg. Appointment of Head, Department of Hindi.(Dated 15.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250501233327611170f4cb.pdf" >
+                                        <span>Office Order regarding re-constitute SC-ST Cell of the University and constitute Standing Committee for effective implementation of polices and programmes of the reservation policy for the SC and ST.(Dated 01.05.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250501232418ca1b6cfd71.pdf" >
+                                        <span>Notification regarding appointment of Head, Department of Commerce.</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250326060543974e85e838.pdf" >
+                                        <span>Office order reg. assigning of Additional Charge of Assistant Registrar (Academic) to Mr Bidhubhusan Mishra, Assistant Professor, Department of Economics. (Dated 25.03.2025) </span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/2025032308504461e2103d76.pdf" >
+                                        <span>Office Order reg. re-constitution of Internal Complaint Committee (ICC) for gender sensitization against Sexual Harassment. (Dated 19.03.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250213195947702483ed55.pdf" >
+                                        <span>Office Order reg. any type of letters and complaints be sent through proper channel.(Dated 13.02.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250213192612c1dcd00c61.pdf" >
+                                        <span>Office order regarding the Policy on Submission and Processing of Complaints.(Dated 13.02.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250213162438c14e4fa637.pdf" >
+                                        <span>Office order regarding nomination of Dr Narendra Singh, Assistant Professor, Department of Political Science as Nodal Officer. (Dated 13.02.2025) </span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/202502062051487be8055928.pdf" >
+                                        <span>Office order reg constitution of various Committees in connection with the Educational Conclave 2025. (Dated 06.02.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250124201258a50d57042a.pdf" >
+                                        <span>Notice reg. Flag Unfurling Ceremony on the occasion of 76th Republic Day.</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250124182144ce0e1068d6.pdf" >
+                                        <span>Office Order reg. implementation of Samarth E-Gov Suite. (Dated 23.01.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/2025012320440189e01b7bfd.pdf" >
+                                        <span>Office order regarding processing of files, letters, requests, etc. through Samarth E-Gov Suite. (Dated 23.01.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250122195559b650749b22.pdf" >
+                                        <span>Office order reg. to re-constitute the Recruitment and Assessment Cell (RAC) of the University.</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250120184334e1dcb609fc.pdf" >
+                                        <span>Officer Order regarding nomination of Prof. Sanotsh Kumar Tripathi, Department of Physics as Coordinator. (Dates 20.01.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/2025011619172089a1040ead.pdf" >
+                                        <span>Office Order regarding Holidays to be observed during the year 2025.(Dated 16.01.2025) </span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250114224235f5f8294581.pdf" >
+                                        <span>Notice reg. Empowerment of Campus Directors to ensure faculty presence and timely class engagement.</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250109080657c7f99031f6.pdf" >
+                                        <span>Office Order reg. assignment of Charge of the Dean, School of Physical Sciences and Head, Department of Mathematics.(Dated 08.01.2025)</span>
+                                    </a>
+                                    </a>
+                                    <img src="images/new.gif" alt="new image"/>
+                                </li><hr>
+                                <li>
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="pdf/20250107200212a3e4c5dc22.pdf" >
+                                        <span>Office Order reg. nomination of Dr Shyam Nandan, Assistant Professor, Department of Hindi as Coordinator to establishment of IGNOU Learning Support Centre in MGCU Campus. (Dated 06.01.2025)</span>
+                                    </a>
+                                                                                    <img src="images/new.gif" alt="new image"/>
+                                                                            </li><hr>
+                                                            </ul>
+                        </marquee>
+                        <a href="notification.php" class="viewAll-btn">View all</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="single-feature">
+                    <div class="title latest_bg">
+                        <h4>Latest @ MGCUB</h4>
                     </div>
                     <div class="desc-wrap marquee_text latestBox">
                         <marquee direction="up" scrollamount="3" scrolldelay="200" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
@@ -5445,89 +5382,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="clearfix"></div>
-<style>
-    .carousel-item img {
-    max-height: 400px;
-    object-fit: cover;
-}
-
-</style>
-<!-- <style type="text/css">
-    
-    .modal-content {
-        border: 0;
-        border-radius: 0;
-        margin: 0;
-        /* bottom: 25px;*/
-        left: 8px;
-        right: 0;
-        /* height: 100vh;*/
-        display: flex;
-    }
-
-    @media (min-width: 576px) {
-                     .modal-dialog {
-                            max-width: 50%;
-                            margin: 1.75rem auto;
-                        }
-    }
-</style> -->
-<!-- pop up image on load page -->
-
-<!-- <div class="myModal modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-            <div class="modal-body">
-                <center>
-                    <a href="Viksit_Bharat.php">
-                        <img src="images/Viksit_Bharat.jpg" class="img img-thumbnail">
-                        <h5 class="text-center mb-20">Viksit Bharat - Click here to view more</h5>
-                    </a>
-                </center>
-                <center><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Go to main website</button></center>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="myModal modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-            <div class="modal-body">
-                <center>
-                    <a href="#">
-                        <img src="images/flyer.jpg" class="img img-thumbnail">
-                        <h5 class="text-center mb-20"> - Click here to view more</h5>
-                    </a>
-                </center>
-                <center><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Go to main website</button></center>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-<section class="feature-area">
-    <div class="container">
-        <div class="row">
+            
             <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="single-feature mb-10">
-                            <div class="admissoinBox">
-                                <h4>Admission</h4>
-                            </div>
-                            <div class="desc-wrap marquee_text admsnBox">
+                <div class="single-feature">
+                    <div class="title latest_bg">
+                        <h4>Admission</h4>
+                    </div>
+                    <div class="desc-wrap marquee_text latestBox">
                                 <marquee direction="up" scrollamount="3" scrolldelay="200" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();" height="115">
                                     <ul>
                                                                                         <li>
@@ -6903,12 +6764,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-xs-12">
-                        <div class="single-feature mb-10">
-                            <div class="admissoinBox">
-                                <h4>Examination / Result</h4>
-                            </div>
-                            <div class="desc-wrap marquee_text resultBox">
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="single-feature">
+                    <div class="title latest_bg">
+                        <h4>Examination / Result</h4>
+                    </div>
+                    <div class="desc-wrap marquee_text latestBox">
                                 <marquee direction="up" scrollamount="3" scrolldelay="200" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
                                     <ul>
                                                                                         <li>
@@ -7448,169 +7310,12 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-
-            <!-- University Documentary Video Popup -->
-            <div class="modal fade" id="uniDocumentaryModal" tabindex="-1" aria-labelledby="uniDocumentaryModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="uniDocumentaryModalLabel">University Documentary</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <iframe id="video_frame" width="100%" height="500" src="https://www.youtube.com/embed/36ip7Xw0JjI?start=57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="single-feature mb-10 uniBox">
-                            <div class="admissoinBox">
-                                <h4>The university</h4>
-                            </div>
-                            <div class="desc-wrap theUniBox">
-                                <img src="images/address2.jpg" alt="address2" class="pull-left img-responsive uniImg">
-                                <div class="vcBox-content text-justify">
-                                    <p class="text-justify mb-0">MAHATMA GANDHI CENTRAL UNIVERSITY came into existence by an Act of Parliament, Central Universities (Amendment)
-                                        Act 2014(No 35 of 2014). The University became functional on 3 rd February 2016. MGCU is situated in Motihari (Bankat), on National Highway 28.</p>
-                                    <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#uniDocumentaryModal">Documentary</a>
-
-                                    <a href="about.php" class="btn btn-primary btn-sm" style="float: right;">Read More</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                    <!-- University VC Video Popup -->
-                    <div class="modal fade" id="HVCModal" tabindex="-1" aria-labelledby="HVCModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="HVCModalLabel">Hon'ble Vice-Chancellor's address on the first convocation</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe id="video_frame" width="100%" height="500" src="https://www.youtube.com/embed/vcdH3qE-PlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-xs-12">
-                        <div class="single-feature mb-10">
-                            <div class="admissoinBox">
-                                <h4>Vice Chancellor Message</h4>
-                            </div>
-                            <div class="desc-wrap vcBox">
-                                <img src="images/vc_1.jpg" alt="Prof. Sanjay Srivastava" class="pull-left img-responsive uniImg" style="height: 90px;">
-                                <div class="vcBox-content text-justify">
-                                    <h5>Prof. Sanjay Srivastava</h5>
-                                    <p class="text-justify mb-0">Welcome to MAHATMA GANDHI CENTRAL UNIVERSITY, Motihari, Bihar. Established in the East Champaran district of Bihar, this is the 41st Central University of India.</p>
-                                    <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#HVCModal">Hon'ble Vice-Chancellor's </a>
-                                    <a href="vc_message.php" class="btn btn-primary btn-sm" style="float: right;">Read More</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="mb-10">
-                            <div class="admissoinBox">
-                                <h4>University Administrators</h4>
-                            </div>
-                            <div class="desc-wrap uniAdminBox">
-                                <div class="whiteBox whiteBox-bg">
-                                    <img src="images/poi1.png" alt="Smt. Droupadi Murmu" class="img-responsive" />
-                                    <div class="vcBox-content">
-                                        <h5>Smt. Droupadi Murmu</h5>
-                                        <h6>The President of India, Hon'ble Visitor</h6>
-                                        <a href="https://presidentofindia.nic.in/Profile" target="_blank">Read more</a>
-                                    </div>
-                                </div>
-                                <div class="whiteBox whiteBox-bg">
-                                    <img src="images/Dharmendra_Pradhan.png" alt="Shri Dharmendra Pradhan" class="img-responsive" />
-                                    <div class="vcBox-content">
-                                        <h5>Shri Dharmendra Pradhan</h5>
-                                        <h6>Hon'ble Education Minister</h6>
-                                        <a href="https://www.msde.gov.in/en/ministers/profile-honble-minister" target="_blank">Read more</a>
-                                    </div>
-                                </div>
-                                <div class="whiteBox whiteBox-bg">
-                                    <img src="images/Mahesh Sharma_vc.jpg" alt="Padma Shri Dr Mahesh Sharma" class="img-responsive" />
-                                    <div class="vcBox-content">
-                                        <h5>Padma Shri Dr Mahesh Sharma </h5>
-                                        <h6>Hon'ble Chancellor</h6>
-                                        <a href="chancellor.php">Read more</a>
-                                    </div>
-                                </div>
-                                <div class="whiteBox whiteBox-bg">
-                                    <img src="images/vc_1.jpg" alt="Prof. Sanjay Srivastava" class="img img-responsive" />
-                                    <div class="vcBox-content">
-                                        <h5>Prof. Sanjay Srivastava</h5>
-                                        <h6>Hon'ble Vice-Chancellor</h6>
-                                        <a href="vc.php">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="single-feature mb-10">
-                            <div class="admissoinBox">
-                                <h4>Events</h4>
-                            </div>
-                            <div class="desc-wrap eventBox">
-                                <!--Slick Carousel Slider-->
-                                <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-                                <link rel="stylesheet" type="text/css" href="css/slick.css" />
-                                <div class="items">
-                                                                                <div>
-                                                <a href="pdf/event/202508072145246b867b56c0.jpg" target="_blank">
-                                                    <img src="pdf/event/202508072145246b867b56c0.jpg">
-                                                    <h6>Invited Lecture on &quot;Adaptation to environmental stresses: from gene to field&quot;.<br>[11th August 2025]
-                                                                                                                    <img src="images/new.gif" alt="new image" style="    height: auto !important; width: unset; border: none;" />
-                                                                                                            </h6>
-                                                </a>
-                                            </div>
-                                                                    </div>
-                                <a href="events.php" class="viewAll-btn">View All</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="clearfix"></div>
     </div>
-</section>
+</div>
 
 <div class="fourBtnBox">
     <div class="container">
