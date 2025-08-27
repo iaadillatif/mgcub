@@ -2071,7 +2071,7 @@ h6 {
     white-space: nowrap;
 }
 
-.header-top-right a, 
+.header-top-right a,
 .header-top-right select {
     display: inline-block;
 }
@@ -5166,7 +5166,7 @@ dl.toggle.time-line:before {
 }
 
 .img-responsive {
-    display: block;
+    display: flex;
     height: auto;
     max-width: 100%;
 }
