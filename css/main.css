@@ -2003,8 +2003,8 @@ h6 {
 
 .header-top {
     background: #eeeeee;
-    font-size: 12px;
-    padding: 8px
+    font-size: 11px;
+    padding: 4px
 }
 
 .header-top a {
@@ -2012,7 +2012,7 @@ h6 {
     font-weight: 400;
     letter-spacing: 0.1rem;
     border: 1px solid #ccc;
-    padding: 2px 7px;
+    padding: 2px 6px;
     background: #fff;
 }
 
@@ -2062,6 +2062,18 @@ h6 {
 .header-top .header-top-right a .lnr {
     display: none;
     font-weight: 700
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.header-top-right a, 
+.header-top-right select {
+    display: inline-block;
 }
 
 @media (max-width: 480px) {
@@ -5094,7 +5106,7 @@ dl.toggle.time-line:before {
     top: 1%;
     left: 1%;
     bottom: 1%;
-    width: 100px;
+    width: 90px;
     float: left;
     height: auto;
     margin: 0;
@@ -5118,7 +5130,6 @@ dl.toggle.time-line:before {
         transform: rotate(360deg);
     }
 }
-
 
 /*End logo rotate css*/
 
@@ -5340,9 +5351,9 @@ dl.toggle.time-line:before {
 }
 
 .marqueeBox {
-    margin-bottom: 15px;
+    margin-bottom: 1px;
     border-top: 1px solid #ddd;
-    padding: 8px 8px;
+    padding: 4px 4px;
     border-left: 5px solid #CA5D0A;
     border-right: 5px solid #CA5D0A;
     border-bottom: 1px solid #ddd;
