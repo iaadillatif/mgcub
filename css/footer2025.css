@@ -10,15 +10,15 @@
 .footer-5-column .footer-container {
     max-width: 95%;
     width: 100%;
-    margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
 }
 
 .img-responsive-footer {
-    display: block;
+    display: column;
     height: auto;
     width: 80%;
+    border: 1px solid #ddd;
 }
 
 .footer-5-column .footer-container .footer-navbar-container {
@@ -26,7 +26,6 @@
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    margin-right: auto;
     margin-left: auto;
 }
 
